@@ -1,13 +1,63 @@
 {
-    "atomType": "Molecule",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "id-183",
-    "name": "phys.SetMaterial",
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "Unitless",
-    "fileTypeVersion": 1,
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "id-183",
+  "name": "phys.SetMaterial",
+  "ioValues": [
+    {
+      "name": "assembly",
+      "ioValue": "__GEOMETRY_INPUT__"
+    },
+    {
+      "name": "material",
+      "ioValue": 10
+    }
+  ],
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "x": 1,
+      "y": 0.5,
+      "uniqueID": "id-184",
+      "ioValues": [
+        {
+          "name": "number or geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0,
+      "y": 0.3,
+      "uniqueID": "id-186",
+      "name": "assembly",
+      "type": "geometry",
+      "options": []
+    },
+    {
+      "atomType": "Input",
+      "x": 0,
+      "y": 0.4,
+      "uniqueID": "id-189",
+      "name": "material",
+      "type": "dropdown",
+      "options": [
+        "plywood",
+        "aluminium",
+        "steel",
+        "PLA - Solid",
+        "PLA - printed",
+        "fiberglass",
+        "carbonfiber",
+        "divinycell foam"
+      ]
+    }
+  ],
+  "allConnectors": [],
+  "unitsKey": "Unitless",
+  "fileTypeVersion": 1,
+  "filetypeVersion": 1
 }
